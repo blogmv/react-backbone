@@ -1,0 +1,118 @@
+body {
+    font-weight: 100;
+}
+
+.header {
+    background: #203041;
+}
+
+.header .col-md-12 {
+    padding: 0;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 0;
+    font-weight: 100;
+}
+
+.jumbotron {
+    padding: 30px 0;
+}
+
+.jumbotron h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.main {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.list-group {
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+article {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 35px;
+}
+
+article p {
+    font: 100 18px/25px helvetica;;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+}
+
+.form-allowed-tags {
+    text-align: center;
+}
+
+.comments {
+    padding: 20px 0;
+    background: #1b222a;
+}
+
+.comments form {
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.discussion {
+    padding: 0;
+}
+
+.discussion li {
+    background: #f5f5f5;
+    margin: 10px 0;
+    padding: 20px 15px;
+}
+
+.discussion p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #203041;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    color: #526d8a;
+    font-size: 18px;
+    margin: 0;
+}

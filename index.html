@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Backbone + RequireJS</title>
+        <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/component.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1>blogMV*</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Backbone + Require</h1>
+                <p>This is an example of the Single Page App built with Backbone and RequireJS.</p>
+            </div>
+        </div>
+
+        <section class="container main">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>JS News</h2>
+
+                    <ul class="list-group">
+                        <li><a href="#" class="list-group-item">Hello World</a></li>
+                        <li><a href="#" class="list-group-item">Bye World</a></li>
+                    </ul>
+                </div><!--col-md-3-->
+
+                <section class="col-md-9">
+                    <article>
+                        <h2>Hello World</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, voluptatum.
+                        Provident accusamus sit, commodi corrupti illo, veniam possimus minima rerum itaque. Magni,
+                        beatae, facere.</p>
+                    </article>
+
+                    <h2>Discussion</h2>
+
+                    <ul class="discussion">
+                        <li>
+                            <b>Foo</b>
+                            <p>Hello, World</p>
+                        </li>
+
+                        <li>
+                            <b>Foo</b>
+                            <p>Bye, World</p>
+                        </li>
+                    </ul>
+                </section><!--col-md-9-->
+            </div>
+        </section><!-- container -->
+
+        <section class="row comments">
+            <div class="col-md-12">
+                <h3>Write a comment</h3>
+
+                <form>
+                    <span class="col-md-6">
+                        <input type="text" id="name" class="form-control input-lg" placeholder="Name">
+                    </span>
+
+                    <span class="col-md-6">
+                        <input type="email" id="email" class="form-control input-lg" placeholder="Email">
+                    </span>
+
+                    <span class="col-md-12">
+                        <textarea id="msg" class="form-control input-lg" placeholder="Comment"></textarea>
+                        <button class="btn btn-lg btn-alert btn-block" type="submit">Post comment</button>
+                    </span>
+                </form>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>
+                Made with ❤ by a bunch of geeks from magic island |
+                <a href="https://twitter.com/zigolis">@zigolis</a> and
+                <a href="https://twitter.com/fjorgemota">@fjorgemota</a>
+            </p>
+        </footer>
+    </body>
+</html>
