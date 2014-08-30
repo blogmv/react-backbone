@@ -1,120 +1,124 @@
 body {
-  font-weight: 100;
-  font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 100;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "PT Sans", serif;
+    font-family: "Helvetica Neue", "PT Sans", serif;
 }
 
 .header {
-  background: #203041;
+    background: #203041;
 }
 
 .header .col-md-12 {
-  padding: 0;
+    padding: 0;
 }
 
 .header h1 {
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 15px 0;
-  font-weight: 100;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 0;
+    font-weight: 100;
 }
 
 .jumbotron {
-  padding: 30px 0;
+    padding: 30px 0;
 }
 
 .jumbotron h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 100;
 }
 
 .main {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.main p {
+    font-size: 20px;
 }
 
 h2 {
-  font-size: 22px;
-  font-weight: 100;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 .list-group {
-  font-weight: 200;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 15px;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 15px;
 }
 
 article {
-  border-bottom: 1px solid #f4f4f4;
-  margin-bottom: 35px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 35px;
 }
 
 h3 {
-  font-size: 26px;
-  font-weight: 100;
-  text-align: center;
-  color: #fff;
+    font-size: 26px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
 }
 
 .form-allowed-tags {
-  text-align: center;
+    text-align: center;
 }
 
 .comments {
-  background: #1b222a;
-  padding: 20px 0;
+    background: #1b222a;
+    padding: 20px 0;
 }
 
 .comments form {
-  margin: 25px auto;
-  width: 600px;
-  overflow: auto;
+    margin: 25px auto;
+    width: 600px;
+    overflow: auto;
 }
 
 textarea {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .btn {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 100;
-  margin-top: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 10px;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .discussion {
-  padding: 0;
+    padding: 0;
 }
 
 .discussion li {
-  background: #f5f5f5;
-  margin: 10px 0;
-  padding: 20px 15px;
+    background: #f5f5f5;
+    margin: 10px 0;
+    padding: 20px 15px;
 }
 
 .discussion p {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 footer {
-  background-color: #203041;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
+    background-color: #203041;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
 }
 
 footer p {
-  color: #526d8a;
-  font-size: 18px;
-  margin: 0;
+    color: #526d8a;
+    font-size: 18px;
+    margin: 0;
 }
