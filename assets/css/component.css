@@ -67,13 +67,14 @@ h3 {
 }
 
 .comments {
-  padding: 20px 0;
   background: #1b222a;
+  padding: 20px 0;
 }
 
 .comments form {
   margin: 25px auto;
-  max-width: 600px;
+  width: 600px;
+  overflow: auto;
 }
 
 textarea {
