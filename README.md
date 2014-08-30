@@ -1,6 +1,6 @@
-Backbone + RequireJS
+blogMV* Skeleton
 ================
 
-This is the skeleton which we gonna use to build our SPA with Backbone and
-Require through an API built with Python using Google App Engine to host blogMV*
-data.
+This is the skeleton which we are gonna use to build our SPA with Backbone and
+other technologies through an API built with Python using Google App Engine to
+host blogMV* data.
