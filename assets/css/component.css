@@ -1,3 +1,15 @@
+* {
+    transition: background .2s ease;
+}
+
+a {
+    transition: color .2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 body {
     font-weight: 100;
     font-family: "Helvetica Neue", "Open Sans", sans-serif;
@@ -22,6 +34,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     padding: 15px 0;
     font-weight: 100;
+}
+
+.header h1 a {
+    transition: color .2s ease;
+
+    color: #fff;
+}
+
+.header h1 a:hover {
+    color: #2a6496;
+    text-decoration: none;
 }
 
 .jumbotron {
@@ -52,6 +75,10 @@ h2 {
     font-size: 16px;
     letter-spacing: 1px;
     margin-top: 15px;
+}
+
+.list-group a {
+    transition: background .2s ease;
 }
 
 article {
