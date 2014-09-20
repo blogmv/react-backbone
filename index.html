@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Backbone + ***</title>
+        <title>Backbone + React</title>
         <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/component.css">
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Open+Sans:400,300,700'>
@@ -18,12 +18,12 @@
 
         <div class="jumbotron">
             <div class="container">
-                <h1>Backbone + ***</h1>
-                <p>This is an example of the Single Page App built with Backbone and ***.</p>
+                <h1>Backbone + React</h1>
+                <p>This is an example of the Single Page App built with Backbone and React.</p>
             </div>
         </div>
 
-        <section class="container main">
+        <section id="blog" class="container main">
             <div class="row">
                 <div class="col-md-3">
                     <h2>JS News</h2>
@@ -87,5 +87,21 @@
                 <a href="https://twitter.com/rcarvalhojs">@rcarvalhojs</a>
             </p>
         </footer>
+        
+        <script src="assets/vendor/react/JSXTransformer.js"></script>
+        <script src="assets/vendor/react/react-with-addons.min.js"></script>
+        <script src="assets/vendor/jquery/dist/jquery.js"></script>
+        <script src="assets/vendor/underscore/underscore.js"></script>
+        <script src="assets/vendor/backbone/backbone.js"></script>
+        
+        <script src="assets/js/models/comment.js"></script>
+        <script src="assets/js/collections/comments.js"></script>
+        
+        <script src="assets/js/models/article.js"></script>
+        <script src="assets/js/collections/articles.js"></script>
+        
+        <script type="text/jsx" src="assets/js/components/article-item.jsx"></script>
+        <script type="text/jsx" src="assets/js/bootstrap.jsx"></script>
+<!--        <script src="assets/js/bootstrap.js"></script>-->
     </body>
 </html>

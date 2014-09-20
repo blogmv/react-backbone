@@ -1,0 +1,20 @@
+var Blog = Blog || {};
+
+(function() {
+    "use strict";
+    
+    Blog.Comment = Backbone.Model.extend({
+        getAuthorName: function() {
+            return this.get("author_name");
+        },
+        
+        getAuthorEmail: function() {
+            return this.get("author_email");
+        },
+        
+        getContent: function() {
+            return this.get("content");
+        }
+    });
+    
+})();
