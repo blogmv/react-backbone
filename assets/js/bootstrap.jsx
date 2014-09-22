@@ -4,7 +4,8 @@ var Blog = Blog || {};
 (function() {
     "use strict";
     
-    var Article = Blog.ArticleItem;
+    var Articles = Blog.Articles;
+    var ArticleItem = Blog.ArticleItem;
     
     var Router = Backbone.Router.extend({
         routes: {
@@ -12,13 +13,19 @@ var Blog = Blog || {};
             "article/:id": "article"
         },
         
-        initialize: function() {
-            
+        initialize: function(callback) { // keeps an eye on callback
+            this.articles = new Articles;
+            this.articles.once("sync", function() {
+                callback();
+            });
+            this.articles.fetch();
         },
         
         index: function() {
+            var firstArticle = this.articles.at(0);
+            
             React.renderComponent(
-                <Article />,
+                <ArticleItem article={firstArticle} />,
                 document.getElementById("blog")
             );
         },
@@ -28,10 +35,11 @@ var Blog = Blog || {};
         }
     });
     
-    new Router;
-    
-    Backbone.history.start({
-        pushState: false,
-        hashChange: true
+    new Router(function() {
+        Backbone.history.start({
+            pushState: false,
+            hashChange: true
+        });
     });
+    
 })();
