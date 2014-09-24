@@ -4,42 +4,38 @@ var Blog = Blog || {};
 (function() {
     "use strict";
     
-    var Articles = Blog.Articles;
+    var ArticleList = Blog.ArticleList;
     var ArticleItem = Blog.ArticleItem;
     
-    var Router = Backbone.Router.extend({
-        routes: {
-            "": "index",
-            "article/:id": "article"
+    var Bootstrap = React.createClass({
+        componentDidMount: function() {
+            this.props.router.on("route", function() {
+                this.forceUpdate();
+            }.bind(this));
         },
         
-        initialize: function(callback) { // keeps an eye on callback
-            this.articles = new Articles;
-            this.articles.once("sync", function() {
-                callback();
-            });
-            this.articles.fetch();
-        },
-        
-        index: function() {
-            var firstArticle = this.articles.at(0);
+        render: function() {    
+            var article = this.props.router.article;
+            var articles = this.props.router.articles;
             
-            React.renderComponent(
-                <ArticleItem article={firstArticle} />,
-                document.getElementById("blog")
+            return (
+                <div className="row">
+                    <ArticleList articles={articles} />
+                    <ArticleItem article={article} />
+                </div>
             );
-        },
-        
-        article: function(id) {
-            console.log("a");
         }
     });
     
-    new Router(function() {
+    var router = new Blog.Router(function() {
         Backbone.history.start({
             pushState: false,
             hashChange: true
         });
     });
     
+    React.renderComponent(
+        <Bootstrap router={router} />,
+        document.getElementById("blog")
+    );
 })();
