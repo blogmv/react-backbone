@@ -9,8 +9,7 @@ var Blog = Blog || {};
     Blog.Router = Backbone.Router.extend({
         routes: {
             "": "index",
-            "article/:id": "article",
-            "yeap": "yeap"
+            "article/:id": "article"
         },
         
         initialize: function(callback) { // keeps an eye on callback
