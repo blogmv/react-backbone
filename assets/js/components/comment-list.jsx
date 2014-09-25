@@ -10,7 +10,7 @@ var Blog = Blog || {};
         componentDidUpdate: function() {
             this.props.comments.on("sync", function() {
                 this.forceUpdate();
-            }.bind(this));
+            }, this);
         },
         
         render: function() {

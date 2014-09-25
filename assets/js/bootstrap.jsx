@@ -6,6 +6,7 @@ var Blog = Blog || {};
     
     var ArticleList = Blog.ArticleList;
     var ArticleItem = Blog.ArticleItem;
+    var WriteComment = Blog.WriteComment;
     
     var Bootstrap = React.createClass({
         componentDidMount: function() {
@@ -19,11 +20,24 @@ var Blog = Blog || {};
             var articles = this.props.router.articles;
             
             return (
-                <div className="row">
-                    <ArticleList articles={articles} />
-                    <ArticleItem article={article} />
+                <div>
+                    <section className="container main">
+                        <div className="row">
+                            <ArticleList articles={articles} />
+                            <ArticleItem article={article} />
+                        </div>
+                    </section>
+                    <WriteComment onSave={this.onSave} />
                 </div>
             );
+        },
+        
+        onSave: function(comment) {
+            this.props.router.article.comments.create({
+                author_name: comment.name,
+                author_email: comment.email,
+                content: comment.text,
+            });
         }
     });
     
